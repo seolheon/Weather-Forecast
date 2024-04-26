@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card">
+        <h1>Weather Forecast</h1>
+        <div class="search">
+            <input id="locationInput" type="text" placeholder="Enter city name" spellcheck="false" required/>
+            <button class="btn" onclick="getWeather()">Search</button>
+        </div>
+        <div class="err">
+            <p>Invalid city name</p>
+            <button>OK</button>
+        </div>
+        <div class="weather">
+            <h1 id="temp"></h1>
+            <h2 class="city"></h2>
+            <div class="details">
+                <div class="col">
+                    <img src="images/humidity.png" alt="Humidity">
+                    <div class="card-details">
+                        <p class="humidity">66%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="images/wind.png" alt="Wind">
+                    <div class="card-details">
+                        <p class="wind-speed">10 m/s</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
